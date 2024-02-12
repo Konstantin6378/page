@@ -1,16 +1,20 @@
+import gsap from "gsap";
+import { Context } from "./Context";
+import { useContext } from "react";
+import styles from "./style.module.scss";
 const Header = () => {
+  const { scrollRef } = useContext(Context);
+  const toScroll = (target) => {
+    gsap.to(window, { duration: 1, scrollTo: target });
+  };
   return (
-    <div className="flex flex-col h-screen">
-      <div className="flex w-full items-start">
-        <h2 className="font-extrabold text-[44px] mt-[41px] mb-[23px]">
-          VIClouds.tech
-        </h2>
+    <div className={styles.header_block}>
+      <div className={styles.header_logo}>
+        <h2>VIClouds.ru</h2>
       </div>
-      <div className="flex flex-col justify-center w-full items-start bg-header-bg bg-no-repeat bg-contain h-[466px] max-h-screen">
-        <h1 className="font-extrabold text-6xl max-w-[813px] mb-[30px]">
-          Empowering Businesses with Innovative Tech Solutions
-        </h1>
-        <button className="hover:bg-red-600 active:bg-yellow-500 font-extrabold text-lg max-w-[184px] max-h-[54px] py-[15px] px-[34px] bg-[#F1576B] text-white rounded-full ml-3">
+      <div className={styles.header_content}>
+        <h1>Empowering Businesses with Innovative Tech Solutions</h1>
+        <button onClick={() => toScroll(scrollRef.current)}>
           Get in Touch
         </button>
       </div>

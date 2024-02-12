@@ -1,23 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
+
 import LeftObj1 from "./assets/left_obj_1.svg";
 import LeftObj2 from "./assets/left_obj_05.svg";
 import RightObj3 from "./assets/right_obj_05.svg";
 import LeftObj3 from "./assets/left_obj_03.svg";
 import RightObj1 from "./assets/right_obj_1.svg";
 import RightObj2 from "./assets/right_obj_03.svg";
+import styles from "./style.module.scss";
+
 const About = () => {
   return (
     <>
-      <div className="flex ">
-        <div className="w-[43%]">
-          <img src={LeftObj1} alt="left-figure-01" className="" />
+      <div className={styles.about_block}>
+        <div className={styles.block_figure}>
+          <img src={LeftObj1} alt="left-figure-01" />
         </div>
-        <div className="text-center w-full">
-          <div className="flex flex-col items-center">
-            <h2 className="text-[44px] font-extrabold mt-[45px] mb-[41px]">
-              Web Development Services
-            </h2>
-            <p className="w-[90%] max-w-full text-base font-light text-left">
+        <div className={styles.block_content}>
+          <div className={styles.content_text}>
+            <h2>Web Development Services</h2>
+            <p>
               Welcome to our Web Development service, where we specialize in
               creating optimized solutions for clients. We offer one-page and
               multi-page website development, revamping existing legacy
@@ -30,13 +31,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center h-screen">
-        <div className="text-center w-full">
-          <div className="flex flex-col items-center">
-            <h2 className="text-[44px] font-extrabold mt-[45px] mb-[41px]">
-              Api and Integration
-            </h2>
-            <p className="w-[90%] max-w-full text-base font-light text-left">
+      <div className={styles.about_block}>
+        <div className={styles.block_content}>
+          <div className={styles.content_text}>
+            <h2>Api and Integration</h2>
+            <p>
               Our API and Integration service, where we specialize in creating
               optimized solutions for our clients. We understand the importance
               of seamless data exchange and functionality across complex IT
@@ -50,20 +49,18 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="w-[43%]">
-          <img src={RightObj2} alt="right-figure-01" className="" />
+        <div className={styles.block_figure}>
+          <img src={RightObj2} alt="right-figure-01" />
         </div>
       </div>
-      <div className="flex items-center h-screen">
-        <div className="w-[43%]">
-          <img src={LeftObj2} alt="left-figure-02" className="" />
+      <div className={styles.about_block}>
+        <div className={styles.block_figure}>
+          <img src={LeftObj2} alt="left-figure-02" />
         </div>
-        <div className="text-center w-full">
-          <div className="flex flex-col items-center">
-            <h2 className="text-[44px] font-extrabold mt-[45px] mb-[41px]">
-              Software Development Lifecycle (SDLC) Consulting
-            </h2>
-            <p className="w-[90%] max-w-full text-base font-light text-left">
+        <div className={styles.block_content}>
+          <div className={styles.content_text}>
+            <h2>Software Development Lifecycle (SDLC) Consulting</h2>
+            <p>
               We specialize in optimizing software development processes for our
               clients. Our experts provide guidance on DevOps, GitFlow, testing,
               Agile methodologies, team interactions, and documentation
@@ -79,13 +76,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center h-screen">
-        <div className="text-center w-full">
-          <div className="flex flex-col items-center">
-            <h2 className="text-[44px] font-extrabold mt-[45px] mb-[41px]">
-              Software Documentation and Consulting Services
-            </h2>
-            <p className="w-[90%] max-w-full text-base font-light text-left">
+      <div className={styles.about_block}>
+        <div className={styles.block_content}>
+          <div className={styles.content_text}>
+            <h2>Software Documentation and Consulting Services</h2>
+            <p>
               We provide optimized solutions for our clients. Our experts offer
               guidance on UML, architectural patterns, architectural reviews,
               and creating UML diagrams. We excel in documenting systems,
@@ -99,20 +94,18 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="w-[43%]">
-          <img src={RightObj1} alt="right-figure-01" className="" />
+        <div className={styles.block_figure}>
+          <img src={RightObj1} alt="right-figure-01" />
         </div>
       </div>
-      <div className="flex items-center h-screen">
-        <div className="w-[43%]">
-          <img src={LeftObj3} alt="left-figure-03" className="" />
+      <div className={styles.about_block}>
+        <div className={styles.block_figure}>
+          <img src={LeftObj3} alt="left-figure-03" />
         </div>
-        <div className="text-center w-full">
-          <div className="flex flex-col items-center">
-            <h2 className="text-[44px] font-extrabold mt-[45px] mb-[41px]">
-              InfraTech Solutions
-            </h2>
-            <p className="w-[90%] max-w-full text-base font-light text-left">
+        <div className={styles.block_content}>
+          <div className={styles.content_text}>
+            <h2>InfraTech Solutions</h2>
+            <p>
               Our team of expert engineers designs and constructs network
               infrastructure tailored to meet the specific requirements,
               purposes, and processes of your company. We analyze your needs and
@@ -128,13 +121,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center h-screen">
-        <div className="text-center w-full">
-          <div className="flex flex-col items-center">
-            <h2 className="text-[44px] font-extrabold mt-[45px] mb-[41px]">
-              InfraTech Solutions
-            </h2>
-            <p className="w-[90%] max-w-full text-base font-light text-left">
+      <div className={styles.about_block}>
+        <div className={styles.block_content}>
+          <div className={styles.content_text}>
+            <h2>InfraTech Solutions</h2>
+            <p>
               Our team of expert engineers designs and constructs network
               infrastructure tailored to meet the specific requirements,
               purposes, and processes of your company. We analyze your needs and
@@ -149,20 +140,18 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="w-[43%]">
-          <img src={RightObj3} alt="right-figure-01" className="" />
+        <div className={styles.block_figure}>
+          <img src={RightObj3} alt="right-figure-01" />
         </div>
       </div>
-      <div className="flex items-center h-screen">
-        <div className="">
+      <div className={styles.about_block}>
+        <div className={styles.block_figure}>
           <img src={LeftObj1} alt="left-figure-01" className="w-full" />
         </div>
-        <div className="text-center w-full">
-          <div className="flex flex-col items-center">
-            <h2 className="text-[44px] font-extrabold mt-[45px] mb-[41px]">
-              Web scraping / data scraping
-            </h2>
-            <p className="w-[90%] max-w-full text-base font-light text-left">
+        <div className={styles.block_content}>
+          <div className={styles.content_text}>
+            <h2>Web scraping / data scraping</h2>
+            <p>
               At our high-tech company, we offer exceptional tech consulting
               services that cater to the diverse needs of our clients. Among our
               wide range of offerings, our web scraping service stands out as a
