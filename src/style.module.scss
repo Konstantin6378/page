@@ -1,5 +1,5 @@
 .header_block {
-  @apply flex flex-col h-screen;
+  @apply flex flex-col h-screen 2xl:h-full;
   .header_logo {
     @apply flex w-full items-start;
     h2 {
@@ -19,7 +19,7 @@
 }
 
 .about_block {
-  @apply flex last-of-type:h-screen;
+  @apply flex last-of-type:h-screen last-of-type:2xl:h-full last-of-type:2xl:mb-28;
   .block_figure {
     @apply max-w-[43%] min-w-[5%] md:mx-6 sm:mx-3 hidden md:block;
   }
